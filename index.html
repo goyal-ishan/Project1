@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Weather App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <a class="btn btn-primary" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary" href="faqs.html">FAQs</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              id="city"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit" id="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4 weather-container">
+      <h1 id="my-4" class="text-center">
+        Weather Of <span id="cityName">Delhi</span>
+      </h1>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col d-flex">
+            <div class="card mb-4 rounded-3 shadow-sm weather-card w-100">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Wind Info</h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>🌀 Wind: <span id="wind">--</span></li>
+                  <li>🌡 Feels Like: <span id="feels">--</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card mb-4 rounded-3 shadow-sm weather-card w-100">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Temperature Info</h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>🌡 Temp: <span id="temp">--</span></li>
+                  <li>💧 Humidity: <span id="humidity">--</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div
+              class="card mb-4 rounded-3 shadow-sm border-primary weather-card w-100"
+            >
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Sun Info</h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>🌇 Sunset: <span id="sunset">--</span></li>
+                  <li>☁️ Condition: <span id="condition">--</span></li>
+                  <li>🌅 Sunrise: <span id="sunrise">--</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">
+          Check weather of common places
+        </h2>
+        <div class="table-responsive">
+          <table class="table text-center weather-table">
+            <thead class="table-light">
+              <tr>
+                <th>City</th>
+                <th>Temperature</th>
+                <th>Feels Like</th>
+                <th>Humidity</th>
+                <th>Condition</th>
+                <th>Wind</th>
+                <th>Sunrise</th>
+                <th>Sunset</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-start">Lucknow</th>
+                <td id="Lucknow-temp">--</td>
+                <td id="Lucknow-feels">--</td>
+                <td id="Lucknow-humidity">--</td>
+                <td id="Lucknow-condition">--</td>
+                <td id="Lucknow-wind">--</td>
+                <td id="Lucknow-sunrise">--</td>
+                <td id="Lucknow-sunset">--</td>
+              </tr>
+              <tr>
+                <th class="text-start">Singapore</th>
+                <td id="Singapore-temp">--</td>
+                <td id="Singapore-feels">--</td>
+                <td id="Singapore-humidity">--</td>
+                <td id="Singapore-condition">--</td>
+                <td id="Singapore-wind">--</td>
+                <td id="Singapore-sunrise">--</td>
+                <td id="Singapore-sunset">--</td>
+              </tr>
+              <tr>
+                <th class="text-start">London</th>
+                <td id="London-temp">--</td>
+                <td id="London-feels">--</td>
+                <td id="London-humidity">--</td>
+                <td id="London-condition">--</td>
+                <td id="London-wind">--</td>
+                <td id="London-sunrise">--</td>
+                <td id="London-sunset">--</td>
+              </tr>
+              <tr>
+                <th class="text-start">Jammu</th>
+                <td id="Jammu-temp">--</td>
+                <td id="Jammu-feels">--</td>
+                <td id="Jammu-humidity">--</td>
+                <td id="Jammu-condition">--</td>
+                <td id="Jammu-wind">--</td>
+                <td id="Jammu-sunrise">--</td>
+                <td id="Jammu-sunset">--</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
