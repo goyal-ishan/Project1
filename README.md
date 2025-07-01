@@ -11,8 +11,8 @@ WeatherWise is a simple web app that fetches real-time weather data using a publ
 ## 📁 Files
 - index.html
 - about.html
+- home.html
 - faqs.html
-- ishan.html
 - style.css
 - script.js
 
